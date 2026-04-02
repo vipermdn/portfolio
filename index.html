@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viper MDN | Java Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-default">
+
+  <!-- ================= BACKGROUND ================= -->
+  <div class="page-bg" aria-hidden="true">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-vignette"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Viper<span>MDN</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#stack" class="nav-link">Tech Stack</a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="hero-badge reveal reveal-up">
+          <i class="fa-solid fa-circle"></i>
+          Java Backend Developer Portfolio
+        </p>
+
+        <h1 class="hero-title reveal reveal-up delay-1">
+          Hi, I’m <span>MaDhaN</span>
+        </h1>
+
+        <h2 class="hero-subtitle reveal reveal-up delay-2">
+          <span id="typing-text"></span>
+        </h2>
+
+        <p class="hero-description reveal reveal-up delay-3">
+          I build structured backend systems using Java, Spring Boot, JDBC, and MySQL.
+          I also have frontend knowledge in HTML, CSS, and JavaScript, but my main focus
+          is backend and enterprise-style development.
+        </p>
+
+        <div class="hero-buttons reveal reveal-up delay-4">
+          <a href="#projects" class="btn primary">
+            <i class="fa-solid fa-diagram-project"></i>
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn secondary">
+            <i class="fa-solid fa-paper-plane"></i>
+            Contact Me
+          </a>
+
+          <a href="#" class="btn ghost">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+
+          <a href="/FINAL PORTFOLIO/resume/resume.png" class="btn ghost">
+            <i class="fa-solid fa-angle-down"></i>
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal reveal-right">
+        <div class="hero-card glass-card">
+          <div class="hero-card-top">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Eclipse</span>
+          </div>
+
+          <div class="profile-circle">VM</div>
+
+          <h3>Java Backend Developer</h3>
+          <p class="hero-card-role">
+            Backend-focused developer with practical knowledge of frontend and modern tools.
+          </p>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-database"></i>
+              <span>Database Apps</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-server"></i>
+              <span>REST APIs</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Layered Design</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-code"></i>
+              <span>Frontend Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span>Scroll</span>
+      <i class="fa-solid fa-angle-down"></i>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">Backend-focused developer with practical project experience</h2>
+        <p class="section-description">
+          I am an MCA student focused on becoming a Java Enterprise Developer.
+          I enjoy building backend systems, database-driven applications, validation logic,
+          secure flow design, and real-world projects with clean architecture.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card reveal reveal-up">
+          <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+          <h3>Backend Development</h3>
+          <p>
+            I mainly focus on Java backend development with clean code, database integration,
+            and structured application design.
+          </p>
+        </div>
+
+        <div class="glass-card about-card reveal reveal-up delay-1">
+          <div class="icon-box"><i class="fa-solid fa-sitemap"></i></div>
+          <h3>Project Structure</h3>
+          <p>
+            I prefer layered architecture, service-repository flow, reusable components,
+            and maintainable backend systems.
+          </p>
+        </div>
+
+        <div class="glass-card about-card reveal reveal-up delay-2">
+          <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Supporting Frontend Skills</h3>
+          <p>
+            I also know HTML, CSS, and JavaScript, which helps me understand full application flow
+            and build frontend practice projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECH STACK ================= -->
+  <section id="stack" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Tech Stack</p>
+        <h2 class="section-title">Technologies I work with</h2>
+        <p class="section-description">
+          My main backend stack along with supporting frontend technologies.
+        </p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="glass-card stack-card reveal reveal-up">
+          <h3>Backend</h3>
+          <div class="stack-items">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>JDBC</span>
+            <span>Hibernate / JPA</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card reveal reveal-up delay-1">
+          <h3>Database</h3>
+          <div class="stack-items">
+            <span>MySQL</span>
+            <span>SQL</span>
+            <span>Database Design</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card reveal reveal-up delay-2">
+          <h3>Frontend</h3>
+          <div class="stack-items">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card reveal reveal-up delay-3">
+          <h3>Concepts</h3>
+          <div class="stack-items">
+            <span>OOP</span>
+            <span>Layered Architecture</span>
+            <span>Validation Logic</span>
+            <span>Authentication Basics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOOLS ================= -->
+  <section id="tools" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Tools</p>
+        <h2 class="section-title">Tools I use</h2>
+        <p class="section-description">
+          Development, testing, learning, and AI tools that support my workflow.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="glass-card tool-card reveal reveal-up">
+          <div class="tool-icon chatgpt-icon">◎</div>
+          <h3>ChatGPT</h3>
+          <p>Used for learning, debugging, explaining concepts, and improving development workflow.</p>
+        </div>
+
+        <div class="glass-card tool-card reveal reveal-up delay-1">
+          <div class="tool-icon grok-icon">𝕏</div>
+          <h3>Grok</h3>
+          <p>Used for alternate AI assistance, idea support, and exploring different approaches.</p>
+        </div>
+
+        <div class="glass-card tool-card reveal reveal-up delay-2">
+          <div class="tool-icon"><i class="fab fa-git-alt"></i></div>
+          <h3>Git</h3>
+          <p>Version control for project tracking, code changes, and source management.</p>
+        </div>
+
+        <div class="glass-card tool-card reveal reveal-up delay-3">
+          <div class="tool-icon"><i class="fa-solid fa-paper-plane"></i></div>
+          <h3>Postman</h3>
+          <p>Used for API testing, request validation, and backend endpoint verification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Projects</p>
+        <h2 class="section-title">Projects that show my development focus</h2>
+        <p class="section-description">
+          Main focus is Java backend, with some frontend practice projects as supporting work.
+        </p>
+      </div>
+
+      <div class="projects-list">
+        <article class="glass-card project-item reveal reveal-up">
+          <div class="project-header">
+            <div>
+              <p class="project-label">Flagship Backend Project</p>
+              <h3>Mini Banking System with Fraud Detection</h3>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <p class="project-summary">
+            A JavaFX & Java-based banking application designed with layered structure and practical
+            business logic for account operations and transaction management.
+          </p>
+
+          <div class="project-features">
+            <span>Account creation and management</span>
+            <span>Deposit, withdraw, and transfer</span>
+            <span>PIN validation and security logic</span>
+            <span>Fraud detection flow</span>
+            <span>Transaction history tracking</span>
+          </div>
+
+          <div class="project-tech">
+            <span>JavaFX</span>
+            <span>Java</span>
+            <span>JDBC</span>
+            <span>MySQL</span>
+            <span>OOP</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-item reveal reveal-up delay-1">
+          <div class="project-header">
+            <div>
+              <p class="project-label">Backend Database Project</p>
+              <h3>SmartSpend Expense Tracker</h3>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <p class="project-summary">
+            A personal finance project focused on structured transaction recording,
+            category handling, and account-wise expense tracking.
+          </p>
+
+          <div class="project-features">
+            <span>Expense and income tracking</span>
+            <span>Category-based entries</span>
+            <span>Descriptions and notes</span>
+            <span>Structured financial records</span>
+          </div>
+
+          <div class="project-tech">
+            <span>Java</span>
+            <span>MySQL</span>
+            <span>JDBC</span>
+            <span>Reports</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-item reveal reveal-up delay-2">
+          <div class="project-header">
+            <div>
+              <p class="project-label">Backend CRUD Project</p>
+              <h3>Student Management System</h3>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <p class="project-summary">
+            A Java application for managing student records with clean CRUD flow
+            and practical database operations.
+          </p>
+
+          <div class="project-features">
+            <span>Create, update, and delete student data</span>
+            <span>Database-driven record management</span>
+            <span>Admin-style operations</span>
+          </div>
+
+          <div class="project-tech">
+            <span>Java</span>
+            <span>JDBC</span>
+            <span>MySQL</span>
+            <span>CRUD</span>
+          </div>
+        </article>
+
+        <article class="glass-card project-item reveal reveal-up delay-3">
+          <div class="project-header">
+            <div>
+              <p class="project-label">Frontend Practice Project</p>
+              <h3>HTML, CSS, JavaScript Portfolio / UI Projects</h3>
+            </div>
+            <div class="project-links">
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <p class="project-summary">
+            Frontend practice work built to improve responsive design, UI structure,
+            styling, and JavaScript interaction.
+          </p>
+
+          <div class="project-features">
+            <span>Responsive layouts</span>
+            <span>UI design practice</span>
+            <span>JavaScript interactions</span>
+            <span>Portfolio-style pages</span>
+          </div>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Education</p>
+        <h2 class="section-title">Academic background</h2>
+        <p class="section-description">
+          You can edit these details anytime before publishing.
+        </p>
+      </div>
+
+      <div class="education-list">
+        <div class="glass-card education-item reveal reveal-up">
+          <div class="education-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div>
+            <h3>MCA</h3>
+            <p>Master of Computer Applications</p>
+            <span>AVVM Sri Pushpam College, Poondi</span>
+            <p>2025 - 2027</p>
+          </div>
+        </div>
+
+        <div class="glass-card education-item reveal reveal-up delay-1">
+          <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h3>BCA</h3>
+            <p>Bachelor of Computer Applications</p>
+            <span>AVVM Sri Pushpam College, Poondi</span>
+            <p>2022 - 2025</p>
+          </div>
+        </div>
+
+        <div class="glass-card education-item reveal reveal-up delay-2">
+          <div class="education-icon"><i class="fa-solid fa-school"></i></div>
+          <div>
+            <h3>Schooling</h3>
+            <p>Studied at Government School</p>
+            <span>School Education / Higher Secondary</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Certifications</p>
+        <h2 class="section-title">Courses and certifications</h2>
+        <p class="section-description">
+          Add your real certificate links or downloadable files here.
+        </p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="glass-card cert-card reveal reveal-up">
+          <div class="cert-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML & CSS Certificate</h3>
+          <p>Frontend fundamentals, layout, styling, and responsive design basics.</p>
+          <div class="cert-actions">
+            <a href="certificates/HTML CSS FULL COURSE COMPLETION CERTIFICATE (1).pdf" class="small-btn" target="_blank">View</a>
+            <a href="certificates/HTML CSS FULL COURSE COMPLETION CERTIFICATE (1).pdf" class="small-btn" download>Download</a>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal reveal-up delay-1">
+          <div class="cert-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript Certificate</h3>
+          <p>JavaScript fundamentals, logic building, DOM, and interaction handling.</p>
+          <div class="cert-actions">
+            <a href="#" class="small-btn">View</a>
+            <a href="#" class="small-btn">Download</a>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal reveal-up delay-2">
+          <div class="cert-icon"><i class="fab fa-java"></i></div>
+          <h3>Java Certificate</h3>
+          <p>Java programming fundamentals, OOP, syntax, and practical development skills.</p>
+          <div class="cert-actions">
+            <a href="#" class="small-btn">View</a>
+            <a href="#" class="small-btn">Download</a>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal reveal-up delay-3">
+          <div class="cert-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Spring Boot Certificate</h3>
+          <p>Spring Boot backend development, APIs, layered structure, and enterprise basics.</p>
+          <div class="cert-actions">
+            <a href="#" class="small-btn">View</a>
+            <a href="#" class="small-btn">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let’s connect</h2>
+        <p class="section-description">
+          Open for internships, freelance work, collaborations, and backend opportunities.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="glass-card contact-form reveal reveal-up">
+          <h3>Send a Message</h3>
+
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="tel" id="phone" placeholder="Your Phone Number" required />
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+
+          <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            Send via WhatsApp
+          </button>
+        </form>
+
+        <div class="contact-info reveal reveal-up delay-1">
+          <div class="glass-card contact-card">
+            <h3>Contact Information</h3>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-user"></i>
+              <div>
+                <h4>Name</h4>
+                <p>Viper MDN / Madhan</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 7871630119</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>madhanofficial01@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <h4>Role</h4>
+                <p>Java Backend Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card social-card">
+            <h3>Profiles</h3>
+            <div class="social-links">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/vipermdn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="HackerRank"><i class="fab fa-hackerrank"></i></a>
+              <a href="mailto:madhanofficial01@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Viper MDN. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#home" class="back-top">
+        Back to Top <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ================= THEME SWITCHER ================= -->
+  <div class="theme-switcher">
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme panel">🎨</button>
+
+    <div class="theme-panel" id="themePanel">
+      <span data-theme="theme-default" title="Default"></span>
+      <span data-theme="theme-blue" title="Blue"></span>
+      <span data-theme="theme-purple" title="Purple"></span>
+      <span data-theme="theme-green" title="Green"></span>
+      <span data-theme="theme-orange" title="Orange"></span>
+      <span data-theme="theme-red" title="Red"></span>
+      <span data-theme="theme-cyan" title="Cyan"></span>
+      <span data-theme="theme-gold" title="Gold"></span>
+      <span data-theme="theme-pink" title="Pink"></span>
+      <span data-theme="theme-dark" title="Dark"></span>
+      <span data-theme="theme-neon" title="Neon"></span>
+      <span data-theme="theme-ocean" title="Ocean"></span>
+      <span data-theme="theme-sunset" title="Sunset"></span>
+      <span data-theme="theme-fire" title="Fire"></span>
+      <span data-theme="theme-ice" title="Ice"></span>
+      <span data-theme="theme-lime" title="Lime"></span>
+      <span data-theme="theme-space" title="Space"></span>
+      <span data-theme="theme-matrix" title="Matrix"></span>
+      <span data-theme="theme-rose" title="Rose"></span>
+      <span data-theme="theme-indigo" title="Indigo"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
