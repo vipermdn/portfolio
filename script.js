@@ -204,7 +204,7 @@ function createParticles() {
     const particle = document.createElement("span");
     particle.classList.add("particle");
 
-    const size = Math.random() * 4 + 2;
+    const size = Math.random() * 10 + 10;
     const left = Math.random() * 100;
     const duration = Math.random() * 12 + 14;
     const delay = Math.random() * 8;
